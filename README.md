@@ -18,3 +18,4 @@ Autor laborator: <numele vostru>
 - `LED_PIN`: pinul digital pentru LED-ul de stare (13)
 - `BUTTON_PIN`: pinul digital pentru butonul de control (2)
 
+Comunicație serială la 19200 baud
