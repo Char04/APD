@@ -8,4 +8,4 @@ Proiect de laborator pentru disciplina Achiziția și prelucrarea datelor. Nod d
 
 # Hardware
 
-Arduino Uno R3, senzor de temperatură TMP36
+Arduino Uno R3, senzor de temperatură TMP36Platformă: Arduino Uno R3 (ATmega328P)
