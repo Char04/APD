@@ -18,5 +18,4 @@ Autor laborator: <numele vostru>
 - `LED_PIN`: pinul digital pentru LED-ul de stare (13)
 - `BUTTON_PIN`: pinul digital pentru butonul de control (2)
 
-Comunicație serială la 115200 baud
-
+Comunicație serială: suportă 115200 baud pentru viteză mare de transfer sau 19200 baud pentru compatibilitate cu echipamente vechi.
