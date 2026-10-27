@@ -9,3 +9,9 @@ Proiect de laborator pentru disciplina Achiziția și prelucrarea datelor. Nod d
 # Hardware
 
 Arduino Uno R3, senzor de temperatură TMP36
+
+
+## Senzori utilizați
+| Senzor | Interfață | Domeniu |
+|---|---|---|
+| TMP36 | Analogic (A0) | -40°C .. +125°C |
