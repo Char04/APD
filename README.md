@@ -48,6 +48,24 @@ Pentru senzorul TMP36 ($500\text{ mV}$ offset la $0^\circ\text{C}$, pantă $10\t
 
 $$T(^\circ\text{C}) = \left( \frac{D_{ADC} \cdot 5.0}{1023.0} - 0.5 \right) \cdot 100$$
 
+### Filtrarea numerică
+
+Pentru atenuarea zgomotului de măsură se utilizează un filtru de medie mobilă (Moving Average Filter). Ecuația mediei aritmetice pentru $M$ eșantioane este:
+
+$$y[n] = \frac{1}{M} \sum_{k=0}^{M-1} x[n-k]$$
+
+Implementarea buclei de calcul în C++:
+
+```cpp
+float computeMovingAverage(const float x[], int M) {
+    float sum = 0.0f;
+    for (int k = 0; k < M; k++) {
+        sum += x[k];
+    }
+    return sum / (float)M;
+}
+```
+
 ## 4. Formatul datelor transmise (CSV)
 
 ```text
@@ -55,6 +73,8 @@ timestamp_ms,raw_adc,voltage_v,temp_c
 1000,153,0.75,24.78
 2000,155,0.76,25.76
 ```
+
+Pentru detalii despre fluxul de comunicație și comenzi, consultați [Specificația protocolului](docs/protocol.md).
 
 ## 5. Checklist verificare
 
